@@ -8,11 +8,17 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home');
-});
+}) ->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');;
 
 Route::get('/auth/signin', function () {
     return view('auth.signin');
 });
+
+
 
 //Route Param
 Route ::get('/user/{name}/age{age}', function ($name,$age) {
