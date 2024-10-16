@@ -76,4 +76,7 @@ Route::name('job')->prefix('job')-> group (function () {
     })->name('.description');
 
 });
+
+//baca folder yg berasingan 
+require __DIR__.'/feed/web.php';
     
